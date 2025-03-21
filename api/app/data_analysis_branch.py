@@ -10,6 +10,7 @@ TRANS_NAME_FILE = "transponder_names.xlsx"
 MIN_LAP_TIME = 13
 MAX_LAP_TIME = 50
 
+# Test
 def load_file(file: str) -> pd.DataFrame:
     try:
         df = pd.read_csv(file, delimiter=',', on_bad_lines='skip')
