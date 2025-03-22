@@ -44,5 +44,9 @@ def stop_session():
 def generate_report():
     return render_template('generate_report.html')
 
+@app.route('/names')
+def names():
+    return render_template('names.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
