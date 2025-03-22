@@ -2,10 +2,8 @@ import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-# import seaborn as sns  # Optionally use seaborn
 from fpdf import FPDF
 from datetime import datetime
-# import urllib3
 from data_analysis import remove_initial_lap, preprocess_lap_times, diesel_engine_df
 
 # ------------------------------------------------------------
