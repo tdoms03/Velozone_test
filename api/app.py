@@ -32,5 +32,17 @@ def leaderboard():
 
     #return redirect(url_for('index'))
 
+@app.route('/start_session')
+def start_session():
+    return render_template('start_session.html')
+
+@app.route('/stop_session')
+def stop_session():
+    return render_template('stop_session.html')
+
+@app.route('/generate_report')
+def generate_report():
+    return render_template('generate_report.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
