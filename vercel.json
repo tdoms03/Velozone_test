@@ -11,10 +11,12 @@
              "dest": "api/app.py"
          }
      ],
-     "functions": {
-    "api/*": {
-      "includeFiles": ["api/**"],
-      "excludeFiles": ["*.png", "*.xlsx", "*.md", "*.txt"]
+     
+    "functions": {
+        "api/*.py": {
+        "includeFiles": "api/**",
+        "excludeFiles": "*.png *.xlsx *.md *.txt"
+        }
     }
   }
  }
