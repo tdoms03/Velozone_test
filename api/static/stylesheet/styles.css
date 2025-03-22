@@ -1,159 +1,54 @@
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    min-height:100vh;
-    max-height: 100vh;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom, #a7c1e4, #3b5b7e);
-    font-family: 'Arial', sans-serif;
-    color: white;
-    text-align: center;
 }
 
 .title {
-    margin-top: -50px;
-    font-size: 4em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background-color: whitesmoke;
-    color: blue;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 80px; /* Even larger font size for the title */
+    color: #007bff; /* Blue color for the title */
+    margin-bottom: 50px;
 }
 
-.container {
-    display: flex;
-    width: 95%;
-    height: 75%;
-    gap: 5%;
-    overflow: hidden;
-    justify-content: center;
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 250px); /* Larger button width */
+    grid-template-rows: repeat(2, 120px); /* Larger button height */
+    gap: 30px;
 }
 
-.container_left {
-    flex: 2; /* Takes up 2/3 of space */
-    width: 100%;
+button {
+    width: 250px; /* Fixed width */
+    height: 120px; /* Fixed height */
+    color: white;
+    border: none;
+    padding: 30px; /* Larger padding */
+    cursor: pointer;
+    font-size: 35px; /* Larger font size */
+    border-radius: 15px; /* Larger border radius */
 }
 
-.container_right {
-    flex: 0.75; /* Takes up 1/3 of space */
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: rgba(255, 255, 255, 0.2); /* Slightly different color */
-    padding: 15px; /* Reduced padding */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #fff;
-    width: 90%; /* Reduced width */
-    height: 75%;
+#start-session {
+    background-color: #28a745; /* Green */
 }
 
-.performances h2 {
-    font-size: 1.5em; /* Smaller font size */
-    margin-bottom: 10px;
+#stop-session {
+    background-color: #dc3545; /* Red */
 }
 
-.performances p, .performances li {
-    font-size: 1.2em; /* Smaller font size */
-    padding: 8px; /* Smaller padding */
-    font-weight: bold;
+#generate-report {
+    background-color: #ffc107; /* Yellow */
 }
 
-.average-times {
-    background: rgba(255, 255, 255, 0.3);
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
-    border: 4px solid white;
-    width: 100%;
-    padding-bottom: 2%;
-    display: flex;
-    flex-direction: column;
-    height: 85%;
-    min-height: 100px;
+#leaderboard {
+    background-color: #007bff; /* Blue */
 }
 
-.average-times h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #fff;
-}
-.column {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-.columns {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.subcolumn {
-    flex: 1;
-    width: 45%;
-}
-
-.subcolumn ol {
-    padding: 0;
-    list-style-position: inside;
-}
-
-.subcolumn li {
-    font-size: 2.15em;
-    padding: 10px;
-    font-weight: bold;
-}
-
-.box {
-    background: rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-    border: 3px solid white;
-}
-
-.performances h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
-}
-
-.performances p, .performances li {
-    font-size: 1.2em;
-    padding: 6px;
-    font-weight: bold;
-}
-
-.logo-container {
-    bottom: 50px;
-    left: 5px;
-}
-
-.logo-container img {
-    max-height: 80px;
-    opacity: 0.9;
-}
-
-.logo-wrapper {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    display: flex;  /* Enables horizontal alignment */
-    gap: 50px;  /* Adds space between logos */
-    align-items: center; /* Ensures logos are aligned properly */
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .columns {
-        flex-direction: column;
-    }
+button:hover {
+    opacity: 0.8; /* Slightly dim on hover */
 }
