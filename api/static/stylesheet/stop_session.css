@@ -1,0 +1,31 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #dc3545; /* Red text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+}
+.title {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.btn-custom {
+    background-color: #dc3545; /* Red button */
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-custom:hover {
+    background-color: #a71d2a; /* Darker red on hover */
+}
