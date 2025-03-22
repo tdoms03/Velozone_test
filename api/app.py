@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from app.extra_functions import limit_numeric_to_2_decimals
 from app.data_analysis_classes import DataAnalysis
-from app.Read_supabase_data import *
+# from app.Read_supabase_data import *
 import pandas as pd
 import json
 import os
